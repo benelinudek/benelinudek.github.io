@@ -7,17 +7,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Official website of Beneli Nudek — musician, singer, songwriter, rapper, creative and entrepreneur."
-    >
+    <meta name="description"
+        content="The official website of Beneli Nudek — musician, singer, songwriter, rapper, creative and entrepreneur.">
 
-    <meta
-        name="author"
-        content="Beneli Nudek"
-    >
+    <meta name="author" content="Beneli Nudek">
 
-    <!-- THIS CONNECTS YOUR HTML TO YOUR CSS -->
+    <meta name="keywords"
+        content="Beneli Nudek, Ben Nudekor Eli, Ghana musician, Afropop, Afrobeat, street-pop, drill, trap, fashion, NUDEK World">
+
+    <!-- CONNECTS THIS PAGE TO style.css -->
     <link rel="stylesheet" href="style.css">
 
     <title>Beneli Nudek | Official Website</title>
@@ -28,912 +26,1609 @@
 <body>
 
 
-    <!-- ================================
-         NAVIGATION
-         ================================= -->
+<!-- ==================================================
+     HEADER / NAVIGATION
+     ================================================== -->
 
-    <header class="site-header">
+<header class="site-header">
 
-        <nav class="navbar">
+    <nav class="navbar">
 
-            <a href="#home" class="logo">
-                BENELI NUDEK
+        <a href="#home" class="logo">
+            BENELI NUDEK
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+
+        <ul class="nav-links" id="nav-links">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#music">Music</a>
+            </li>
+
+            <li>
+                <a href="#lyrics">Lyrics</a>
+            </li>
+
+            <li>
+                <a href="#videos">Videos</a>
+            </li>
+
+            <li>
+                <a href="#style">Style</a>
+            </li>
+
+            <li>
+                <a href="#events">Events</a>
+            </li>
+
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+
+            <li>
+                <a href="#business">NUDEK World</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ==================================================
+     HERO
+     ================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <span class="hero-label">
+            OFFICIAL WEBSITE
+        </span>
+
+
+        <h1>
+            BENELI<br>
+            NUDEK
+        </h1>
+
+
+        <p class="hero-description">
+            Musician. Singer. Songwriter. Rapper.
+            Creative. Entrepreneur.
+        </p>
+
+
+        <p>
+            Music, style, art and a vision for something bigger.
+        </p>
+
+
+        <div class="button-group">
+
+            <a
+                href="#music"
+                class="btn btn-primary"
+            >
+                Explore My Music
             </a>
 
 
-            <ul class="nav-links">
+            <a
+                href="#about"
+                class="btn btn-outline"
+            >
+                My Story
+            </a>
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
+        </div>
 
-                <li>
-                    <a href="#music">Music</a>
-                </li>
+    </div>
 
-                <li>
-                    <a href="#videos">Videos</a>
-                </li>
-
-                <li>
-                    <a href="#style">Style</a>
-                </li>
-
-                <li>
-                    <a href="#events">Events</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </header>
+</section>
 
 
 
-    <main>
+<!-- ==================================================
+     SEARCH
+     ================================================== -->
+
+<section id="search">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                SEARCH
+            </span>
+
+            <h2>
+                FIND YOUR WAY.
+            </h2>
+
+            <p>
+                Search the official Beneli Nudek website.
+            </p>
+
+        </div>
 
 
-        <!-- ================================
-             HOME / HERO
-             ================================= -->
+        <form
+            class="search-box"
+            id="site-search"
+        >
 
-        <section class="hero" id="home">
-
-            <div class="container hero-content">
-
-                <span class="hero-label">
-                    OFFICIAL WEBSITE
-                </span>
-
-
-                <h1>
-                    BENELI<br>
-                    NUDEK
-                </h1>
+            <input
+                type="search"
+                id="search-input"
+                placeholder="Search music, fashion, lyrics, events..."
+                aria-label="Search website"
+            >
 
 
-                <p class="hero-description">
-                    Musician. Singer. Songwriter. Rapper.
-                    Creative. Entrepreneur.
+            <button
+                type="submit"
+                class="search-button"
+            >
+                SEARCH
+            </button>
+
+        </form>
+
+
+        <div id="search-results"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ABOUT
+     ================================================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                01 / ABOUT
+            </span>
+
+            <h2>
+                MY STORY.
+            </h2>
+
+        </div>
+
+
+        <div class="bio-grid">
+
+
+            <div class="bio-image">
+
+                <div class="image-placeholder">
+
+                    <span>
+                        BENELI NUDEK
+                    </span>
+
+                    <p>
+                        Official photo coming soon
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="bio-text">
+
+                <p>
+                    <strong>Ben Nudekor Eli</strong>,
+                    professionally known as
+                    <strong>Beneli Nudek</strong>, is a
+                    musician, singer, songwriter, rapper,
+                    creative and entrepreneur.
                 </p>
 
 
-                <div class="button-group">
-
-                    <a
-                        href="#music"
-                        class="btn btn-primary"
-                    >
-                        Explore My Music
-                    </a>
-
-
-                    <a
-                        href="#about"
-                        class="btn btn-outline"
-                    >
-                        Discover My Story
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
+                <p>
+                    Born on <strong>31 July 2008</strong>
+                    in Tegbi, Volta Region, Ghana,
+                    Beneli Nudek grew up in Tegbi and
+                    developed a strong connection with
+                    music, creativity and self-expression.
+                </p>
 
 
-
-        <!-- ================================
-             SEARCH
-             ================================= -->
-
-        <section id="search">
-
-            <div class="container">
+                <p>
+                    His creative world moves through
+                    Afropop, Afrobeat, street-pop,
+                    drill and trap.
+                </p>
 
 
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        SEARCH
-                    </span>
-
-
-                    <h2>
-                        FIND YOUR WAY.
-                    </h2>
+                <p>
+                    Music gives him a way to express
+                    emotions, experiences, thoughts and
+                    different sides of life that he wants
+                    the world to understand.
+                </p>
 
 
-                    <p>
-                        Search the Beneli Nudek website for
-                        music, lyrics, videos, events,
-                        stories and more.
-                    </p>
-
-                </div>
-
-
-                <form
-                    class="search-box"
-                    id="site-search"
+                <a
+                    href="#journey"
+                    class="btn btn-outline"
                 >
-
-                    <input
-                        type="search"
-                        id="search-input"
-                        placeholder="Search Beneli Nudek..."
-                        aria-label="Search website"
-                    >
-
-
-                    <button
-                        type="submit"
-                        class="search-button"
-                    >
-                        SEARCH
-                    </button>
-
-                </form>
-
-
-                <div id="search-results"></div>
+                    Explore My Journey
+                </a>
 
             </div>
 
-        </section>
+        </div>
+
+    </div>
+
+</section>
 
 
 
-        <!-- ================================
-             ABOUT
-             ================================= -->
+<!-- ==================================================
+     PERSONAL INFORMATION
+     ================================================== -->
 
-        <section id="about">
+<section id="profile">
 
-            <div class="container">
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                PROFILE
+            </span>
+
+            <h2>
+                THE PERSON BEHIND THE NAME.
+            </h2>
+
+        </div>
 
 
-                <div class="section-heading">
+        <div class="card-grid">
 
-                    <span class="section-number">
-                        01 / ABOUT
+
+            <article class="card">
+
+                <h3>
+                    Full Name
+                </h3>
+
+                <p>
+                    Ben Nudekor Eli
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Professional Name
+                </h3>
+
+                <p>
+                    Beneli Nudek
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Born
+                </h3>
+
+                <p>
+                    31 July 2008
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Birthplace
+                </h3>
+
+                <p>
+                    Tegbi, Volta Region, Ghana
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Hometown
+                </h3>
+
+                <p>
+                    Tegbi, Keta / Volta Region
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Education
+                </h3>
+
+                <p>
+                    Tegbi Afedome Basic
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Former School Prefect
+                </h3>
+
+                <p>
+                    Served as a prefect at basic school level.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Current Base
+                </h3>
+
+                <p>
+                    Tegbi, with plans to continue building
+                    in Accra.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     JOURNEY
+     ================================================== -->
+
+<section id="journey">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                MY JOURNEY
+            </span>
+
+            <h2>
+                THE BEGINNING.
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    2008
+                </span>
+
+                <h3>
+                    The Beginning
+                </h3>
+
+                <p>
+                    Beneli Nudek was born on 31 July 2008
+                    in Tegbi, Volta Region, Ghana.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    EDUCATION
+                </span>
+
+                <h3>
+                    Tegbi Afedome Basic
+                </h3>
+
+                <p>
+                    Studied at Tegbi Afedome Basic and
+                    served as a school prefect.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    2024
+                </span>
+
+                <h3>
+                    Music Journey
+                </h3>
+
+                <p>
+                    Began developing his music journey,
+                    exploring songwriting and recording.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span class="timeline-year">
+                    TODAY
+                </span>
+
+                <h3>
+                    Building The Vision
+                </h3>
+
+                <p>
+                    Developing music, fashion, tattooing,
+                    art and entrepreneurship.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MUSIC
+     ================================================== -->
+
+<section id="music">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                02 / MUSIC
+            </span>
+
+            <h2>
+                MY SOUND.
+            </h2>
+
+            <p>
+                Music is one of the strongest ways
+                Beneli Nudek expresses himself.
+            </p>
+
+        </div>
+
+
+        <div class="music-card">
+
+
+            <div class="music-cover">
+
+                <div class="image-placeholder">
+
+                    <span>
+                        MUSIC
                     </span>
 
-
-                    <h2>
-                        MY STORY.
-                    </h2>
+                    <p>
+                        Cover artwork coming soon
+                    </p>
 
                 </div>
 
+            </div>
 
 
-                <div class="bio-grid">
+            <div class="music-info">
+
+                <span>
+                    FEATURED SONG
+                </span>
+
+                <h3>
+                    Something You Know
+                </h3>
+
+                <p>
+                    BENELI NUDEK
+                </p>
+
+                <p>
+                    Official music player coming soon.
+                </p>
+
+            </div>
 
 
-                    <div class="bio-image">
+            <button
+                class="play-button"
+                id="play-button"
+                type="button"
+                aria-label="Play music"
+            >
+                ▶
+            </button>
 
-                        <!--
-                        YOUR PROFESSIONAL PHOTO
-                        WILL GO HERE LATER.
-                        -->
-
-                    </div>
-
-
-
-                    <div class="bio-text">
-
-                        <p>
-                            Ben Nudekor Eli, professionally known
-                            as Beneli Nudek, is a musician,
-                            singer, songwriter, rapper and
-                            entrepreneur.
-                        </p>
+        </div>
 
 
-                        <p>
-                            Born on 31 July 2008 in Tegbi,
-                            Volta Region, Ghana, Beneli Nudek
-                            grew up in Tegbi and developed a
-                            strong connection with music,
-                            creativity and self-expression.
-                        </p>
+        <div class="button-group">
+
+            <a
+                href="#"
+                class="btn btn-primary"
+            >
+                Spotify
+            </a>
 
 
-                        <p>
-                            His musical world moves through
-                            Afropop, Afrobeat, street-pop,
-                            drill and trap, combining emotion,
-                            personal experiences and different
-                            sides of his creative identity.
-                        </p>
+            <a
+                href="#"
+                class="btn btn-outline"
+            >
+                Apple Music
+            </a>
 
 
-                        <a
-                            href="#timeline"
-                            class="btn btn-outline"
-                        >
-                            Explore My Journey
+            <a
+                href="#"
+                class="btn btn-outline"
+            >
+                YouTube Music
+            </a>
+
+
+            <a
+                href="#"
+                class="btn btn-outline"
+            >
+                Boomplay
+            </a>
+
+        </div>
+
+
+        <p class="small-note">
+            Official streaming links will be connected
+            when the artist profiles are ready.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LYRICS
+     ================================================== -->
+
+<section id="lyrics">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                03 / LYRICS
+            </span>
+
+            <h2>
+                WORDS & FEELINGS.
+            </h2>
+
+            <p>
+                The words behind the music.
+            </p>
+
+        </div>
+
+
+        <div class="card-grid">
+
+
+            <article class="card">
+
+                <span>
+                    SONG
+                </span>
+
+                <h3>
+                    Something You Know
+                </h3>
+
+                <p>
+                    Lyrics and the story behind the
+                    song will appear here.
+                </p>
+
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    Read Lyrics
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <span>
+                    COMING SOON
+                </span>
+
+                <h3>
+                    More Songs
+                </h3>
+
+                <p>
+                    New lyrics will be added as more
+                    official releases arrive.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     VIDEOS
+     ================================================== -->
+
+<section id="videos">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                04 / VIDEOS
+            </span>
+
+            <h2>
+                WATCH.
+            </h2>
+
+            <p>
+                Music videos, performances and
+                behind-the-scenes moments.
+            </p>
+
+        </div>
+
+
+        <div class="card-grid">
+
+
+            <article class="card">
+
+                <h3>
+                    Music Videos
+                </h3>
+
+                <p>
+                    Official music videos will appear here.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    Watch
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Behind The Scenes
+                </h3>
+
+                <p>
+                    Studio sessions, recording and
+                    creative moments.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    Watch
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    Performances
+                </h3>
+
+                <p>
+                    Live performances and appearances.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    Watch
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     BENELI STYLE
+     ================================================== -->
+
+<section id="style">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                05 / BENELI STYLE
+            </span>
+
+            <h2>
+                STYLE IS IDENTITY.
+            </h2>
+
+            <p>
+                A visual space dedicated to fashion,
+                outfits and personal style.
+            </p>
+
+        </div>
+
+
+        <div class="card-grid">
+
+
+            <article class="card">
+
+                <h3>
+                    STREET
+                </h3>
+
+                <p>
+                    Streetwear, oversized fits,
+                    cargos, sneakers and urban looks.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    View Looks
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    FORMAL
+                </h3>
+
+                <p>
+                    Clean office dressing, suits,
+                    shirts and elevated looks.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    View Looks
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    EVERYDAY
+                </h3>
+
+                <p>
+                    Comfortable outfits that still
+                    look sharp and stylish.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    View Looks
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    PERFORMANCE
+                </h3>
+
+                <p>
+                    Stage outfits created for music,
+                    performances and appearances.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    View Looks
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    STATEMENT
+                </h3>
+
+                <p>
+                    Bold combinations and outfits
+                    designed to stand out.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    View Looks
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    ACCESSORIES
+                </h3>
+
+                <p>
+                    Sneakers, watches, chains,
+                    rings, bags and sunglasses.
+                </p>
+
+                <a
+                    href="#"
+                    class="btn btn-outline"
+                >
+                    View Looks
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <div class="style-brand">
+
+            <span>
+                FUTURE VISION
+            </span>
+
+            <h3>
+                NUDEK
+            </h3>
+
+            <p>
+                A future international clothing and
+                fashion brand growing from the NUDEK World vision.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     EVENTS
+     ================================================== -->
+
+<section id="events">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                06 / EVENTS
+            </span>
+
+            <h2>
+                SEE ME LIVE.
+            </h2>
+
+            <p>
+                Upcoming performances, appearances,
+                concerts and events.
+</p>
+
+</div>
+
+
+<div class="event-card">
+
+    <div>
+
+        <span class="event-date">
+            COMING SOON
+        </span>
+
+        <h3>
+            Upcoming Events
+        </h3>
+
+        <p>
+            Official event announcements will
+            appear here.
+        </p>
+
+    </div>
+
+
+    <a
+        href="#contact"
+        class="btn btn-outline"
+    >
+        Event Enquiries
+    </a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     GALLERY
+     ================================================== -->
+
+<section id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                07 / GALLERY
+            </span>
+
+            <h2>
+                MOMENTS.
+            </h2>
+
+            <p>
+                Music, fashion, art, events and life.
+            </p>
+
+        </div>
+
+
+        <div class="card-grid">
+
+            <article class="card">
+
+                <h3>
+                    MUSIC
+                </h3>
+
+                <p>
+                    Studio sessions, recording and
+                    music-related photography.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    FASHION
+                </h3>
+
+                <p>
+                    Personal style, outfits and
+                    photoshoots.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    ART
+                </h3>
+
+                <p>
+                    Tattooing and creative work.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    LIFE
+                </h3>
+
+                <p>
+                    Personal moments and memories.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     NUDEK WORLD
+     ================================================== -->
+
+<section id="business">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                08 / NUDEK WORLD
+            </span>
+
+            <h2>
+                BUILDING SOMETHING BIGGER.
+            </h2>
+
+            <p>
+                NUDEK World is the umbrella vision
+                behind future creative and business ventures.
+            </p>
+
+        </div>
+
+
+        <div class="card-grid">
+
+            <article class="card">
+
+                <h3>
+                    MUSIC
+                </h3>
+
+                <p>
+                    Music, recording, releases,
+                    performances and culture.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    FASHION
+                </h3>
+
+                <p>
+                    Developing toward a future
+                    international clothing brand.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    ART
+                </h3>
+
+                <p>
+                    Tattooing and other creative
+                    expressions.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    AGRICULTURE
+                </h3>
+
+                <p>
+                    Future agricultural ventures
+                    and opportunities.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    BUSINESS
+                </h3>
+
+                <p>
+                    Future ventures including
+                    import, export, manufacturing
+                    and other opportunities.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    THE VISION
+                </h3>
+
+                <p>
+                    A long-term global brand built
+                    around creativity, culture and business.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CAREER
+     ================================================== -->
+
+<section id="career">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                09 / CAREER
+            </span>
+
+            <h2>
+                MORE THAN ONE LANE.
+            </h2>
+
+        </div>
+
+
+        <div class="card-grid">
+
+            <article class="card">
+
+                <h3>
+                    MUSIC
+                </h3>
+
+                <p>
+                    Singer, songwriter, rapper and
+                    recording artist.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    TATTOOING
+                </h3>
+
+                <p>
+                    Developing tattooing skills and
+                    creative art.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    ENTREPRENEURSHIP
+                </h3>
+
+                <p>
+                    Building toward a larger
+                    entrepreneurial future.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <h3>
+                    FASHION
+                </h3>
+
+                <p>
+                    Developing a personal fashion
+                    identity with a future NUDEK brand vision.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     NET WORTH
+     ================================================== -->
+
+<section id="net-worth">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                10 / PUBLIC PROFILE
+            </span>
+
+            <h2>
+                THE NUMBERS.
+            </h2>
+
+            <p>
+                Publicly displayed estimated figure.
+            </p>
+
+        </div>
+
+
+        <div class="net-worth">
+
+            <span class="net-worth-label">
+                CURRENT ESTIMATED NET WORTH
+            </span>
+
+
+            <div class="net-worth-value">
+                $30,000
+            </div>
+
+
+            <p>
+                Public estimate and not an audited
+                financial statement. This figure may
+                change as the career and businesses develop.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTACT
+     ================================================== -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                11 / CONTACT
+            </span>
+
+            <h2>
+                LET'S CONNECT.
+            </h2>
+
+            <p>
+                Business enquiries, bookings,
+                collaborations, media and professional opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    benelinudek@gmail.com
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Social Media
+                </h3>
+
+                <p>
+                    @benelinudek
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    LinkedIn
+                </h3>
+
+                <p>
+                    Ben Nudekor Eli
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+     ================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-title">
+                    BENELI NUDEK
+                </div>
+
+                <p>
+                    Music. Style. Art. Vision.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#about">
+                            About
                         </a>
+                    </li>
 
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             JOURNEY
-             ================================= -->
-
-        <section id="timeline">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        MY JOURNEY
-                    </span>
-
-
-                    <h2>
-                        THE BEGINNING.
-                    </h2>
-
-                </div>
-
-
-
-                <div class="timeline">
-
-
-                    <div class="timeline-item">
-
-                        <span class="timeline-year">
-                            2008
-                        </span>
-
-
-                        <h3>
-                            Born in Tegbi
-                        </h3>
-
-
-                        <p>
-                            Beneli Nudek was born on
-                            31 July 2008 in Tegbi,
-                            Volta Region, Ghana.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="timeline-item">
-
-                        <span class="timeline-year">
-                            EDUCATION
-                        </span>
-
-
-                        <h3>
-                            Tegbi Afedome Basic
-                        </h3>
-
-
-                        <p>
-                            Studied at Tegbi Afedome Basic
-                            and served as a school prefect
-                            at the basic school level.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="timeline-item">
-
-                        <span class="timeline-year">
-                            2024
-                        </span>
-
-
-                        <h3>
-                            Music Journey
-                        </h3>
-
-
-                        <p>
-                            Began taking his music journey
-                            seriously, exploring recording,
-                            songwriting and self-expression
-                            through music.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="timeline-item">
-
-                        <span class="timeline-year">
-                            NOW
-                        </span>
-
-
-                        <h3>
-                            Building The Future
-                        </h3>
-
-
-                        <p>
-                            Developing music, fashion, art
-                            and entrepreneurship while
-                            building the Beneli Nudek and
-                            NUDEK World vision.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             MUSIC
-             ================================= -->
-
-        <section id="music">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        02 / MUSIC
-                    </span>
-
-
-                    <h2>
-                        MY SOUND.
-                    </h2>
-
-
-                    <p>
-                        Explore my music, releases and
-                        the stories behind the songs.
-                    </p>
-
-                </div>
-
-
-
-                <div class="music-card">
-
-
-                    <div class="music-cover">
-
-                        <!--
-                        SONG COVER ART
-                        WILL GO HERE.
-                        -->
-
-                    </div>
-
-
-
-                    <div class="music-info">
-
-                        <h3>
-                            Something You Know
-                        </h3>
-
-
-                        <p>
-                            BENELI NUDEK
-                        </p>
-
-
-                        <p>
-                            Music player coming soon.
-                        </p>
-
-                    </div>
-
-
-
-                    <button
-                        class="play-button"
-                        type="button"
-                        aria-label="Play song"
-                    >
-                        ▶
-                    </button>
-
-                </div>
-
-
-
-                <div class="button-group">
-
-
-                    <a
-                        href="#"
-                        class="btn btn-primary"
-                    >
-                        Spotify
-                    </a>
-
-
-                    <a
-                        href="#"
-                        class="btn btn-outline"
-                    >
-                        Apple Music
-                    </a>
-
-
-                    <a
-                        href="#"
-                        class="btn btn-outline"
-                    >
-                        YouTube Music
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             LYRICS
-             ================================= -->
-
-        <section id="lyrics">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        03 / LYRICS
-                    </span>
-
-
-                    <h2>
-                        WORDS & FEELINGS.
-                    </h2>
-
-
-                    <p>
-                        Lyrics, stories and emotions
-                        behind the music.
-                    </p>
-
-                </div>
-
-
-
-                <div class="card-grid">
-
-
-                    <article class="card">
-
-                        <h3>
-                            Something You Know
-                        </h3>
-
-
-                        <p>
-                            Lyrics will be added here
-                            when the official song page
-                            is ready.
-                        </p>
-
-
-                        <div class="button-group">
-
-                            <a
-                                href="#"
-                                class="btn btn-outline"
-                            >
-                                Read Lyrics
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             VIDEOS
-             ================================= -->
-
-        <section id="videos">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        04 / VIDEOS
-                    </span>
-
-
-                    <h2>
-                        WATCH.
-                    </h2>
-
-
-                    <p>
-                        Music videos, performances,
-                        behind the scenes and visual
-                        stories.
-                    </p>
-
-                </div>
-
-
-
-                <div class="card-grid">
-
-
-                    <article class="card">
-
-                        <h3>
-                            Music Videos
-                        </h3>
-
-
-                        <p>
-                            Official music videos
-                            will appear here.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="card">
-
-                        <h3>
-                            Behind The Scenes
-                        </h3>
-
-
-                        <p>
-                            Studio sessions and
-                            moments behind the music.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="card">
-
-                        <h3>
-                            Performances
-                        </h3>
-
-
-                        <p>
-                            Live performances
-                            and appearances.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             BENELI STYLE
-             ================================= -->
-
-        <section id="style">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        05 / BENELI STYLE
-                    </span>
-
-
-                    <h2>
-                        STYLE IS IDENTITY.
-                    </h2>
-
-
-                    <p>
-                        Explore different sides of my
-                        personal style — from streetwear
-                        and everyday looks to formal,
-                        performance and statement outfits.
-                    </p>
-
-                </div>
-
-
-
-                <div class="card-grid">
-
-
-                    <article class="card">
-
-                        <h3>
-                            Street
-                        </h3>
-
-
-                        <p>
-                            Streetwear, sneakers,
-                            oversized fits, cargos
-                            and urban looks.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="card">
-
-                        <h3>
-                            Elevated
-                        </h3>
-
-
-                        <p>
-                            Smart, formal and
-                            sophisticated outfits
-                            for a sharper identity.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="card">
-
-                        <h3>
-                            Performance
-                        </h3>
-
-
-                        <p>
-                            Stage outfits and looks
-                            created for the spotlight.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="card">
-
-                        <h3>
-                            Statement Looks
-                        </h3>
-
-
-                        <p>
-                            Outfits that stand out
-                            and make a statement.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="card">
-
-                        <h3>
-                            Everyday
-                        </h3>
-
-
-                        <p>
-                            Simple, comfortable and
-                            stylish everyday combinations.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="card">
-
-                        <h3>
-                            Accessories
-                        </h3>
-
-
-                        <p>
-                            Sneakers, watches, chains,
-                            rings, bags, sunglasses
-                            and more.
-                        </p>
-
-                    </article>
-
-                </div>
-
-
-
-                <div class="button-group">
-
-                    <a
-                        href="#"
-                        class="btn btn-primary"
-                    >
-                        Explore The Looks
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             EVENTS
-             ================================= -->
-
-        <section id="events">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        06 / EVENTS
-                    </span>
-
-
-                    <h2>
-                        SEE ME LIVE.
-                    </h2>
-
-
-                    <p>
-                        Upcoming performances,
-                        appearances, concerts
-                        and events.
-                    </p>
-
-                </div>
-
-
-
-                <div class="event-card">
-
-
-                    <div>
-
-                        <span class="event-date">
-                            COMING SOON
-                        </span>
-
-
-                        <h3>
-                            Upcoming Events
-                        </h3>
-
-
-                        <p>
-                            Official event information
-                            will be announced here.
-                        </p>
-
-                    </div>
-
-
-
-                    <a
-                        href="#contact"
-                        class="btn btn-outline"
-                    >
-                        Event Enquiries
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             GALLERY
-             ================================= -->
-
-        <section id="gallery">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <span class="section-number">
-                        07 / GALLERY
-                    </span>
-
-
-                    <h2>
-                        MOMENTS.
-                    </h2>
-
-
-                    <p>
-                        Photos from music, fashion,
-                        art, events, studio sessions
-                        and life.
-                    </p>
-
-                </div>
-
-
-
-                <div class="card-grid">
-
-
-                    <article class="card">
-
-                        <h3>
+                    <li>
+                        <a href="#music">
                             Music
-                        </h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#style">
+                            Style
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#events">
+                            Events
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
 
 
-                        <p>
-                            Studio and music moments.
-                        </p>
+            <div>
 
-                    </article>
+                <h3>
+                    Connect
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            TikTok
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            YouTube
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Facebook
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Beneli Nudek. All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
 
 
 
-                    <article class="card">
+<!-- ==================================================
+     JAVASCRIPT CONNECTION
+     ================================================== -->
 
-                        <h3>
-                            Fashion
+<script src="script.js"></script>
+
+
+</body>
+
+            </html>
